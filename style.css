@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Sorts+Mill+Goudy&display=swap');
+
+html, nav, button {
+    font-family: "Bebas Neue";
+    font-variant: small-caps;
+    color: black;
+    font-size: 2.5vmin;
+    margin: 0 auto;
+}
+
+/* .container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "sidebar main main main"
+    "sidebar content-1 content-2 content-3"
+    "sidebar section section section";
+} */
+
+main {
+    width: 100%;
+    height:auto;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(media/music.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar{
+    display: flex;
+    background: #ef233c;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    margin: 0 auto; 
+    list-style-type: none;
+    
+}
+
+.navbar ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 15px;   
+    margin: 0 10px;
+    
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: #f4f3ee;
+}
+
+#logo {
+    width: 100px;
+    cursor:pointer;
+    align-items: left;
+}
+
+.content {
+    text-align: center;
+}
+
+.content img {
+    width: 10vmin;
+    height: 10vmin;
+    margin-top: 120px;
+}
+
+button {
+    background-color: #ef233c;
+    box-shadow: 0 5px 20 px black;
+    color: #f4f3ee;
+}
+
+.rows {
+    width: 100%;
+    display: flex;
+}
+
+.columns {
+    flex: 20%;
+    display: grid;
+    grid-template-columns: (no-repeat 4fr);
+}
+
+.columns img {
+    width: 250px;
+    height: 300px;
+    margin: auto;
+}
+
+@media screen and (max-width:550px) {
+    html {
+        overflow-y: hidden;
+    }
+
+    html,  nav ul, button {
+        font-size: 1.5vmin;
+    }
+
+    nav {
+        width: 100%;
+        height: auto;
+        display: inline-block;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    button {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .container {
+    width: 100%;
+    height: 25vh;
+    background-image: url(media/music.jpg);
+    background-position: center;
+    background-size: cover;
+    }
+
+    div.content {
+        align-content: center;
+        align-items: center;
+        margin-top: 0 auto;
+    }
+    
+    .content img {
+    width: 10vmin;
+    height: 10vmin;
+    }
+
+    #logo {
+        width: 5vw;
+        height: auto;
+    }
+
+    button {
+        width: 20vw;
+    }
+
+    .row, .columns {
+        width: 100%;
+    }
+
+    .columns img  {
+        width: 70%;
+        height:10vh;
+         
+    }
+}
+

@@ -1,7 +1,7 @@
 # music-web
 a simple website with just a song for now... needs to be worked on
 
-deployed 
+deployed [![Netlify Status](https://api.netlify.com/api/v1/badges/3a61c879-a1aa-4e99-9414-860b50415050/deploy-status)](https://hungry-booth-fd4f51.netlify.app/)
 
 [Free Logo Design](https://www.freelogodesign.org/) 
                           👇
